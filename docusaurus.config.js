@@ -65,13 +65,13 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "intro",
+            docId: "introduction",
             position: "left",
-            label: "Tutorial",
+            label: "Introduction",
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/zemantic/fhir-auth-server",
             label: "GitHub",
             position: "right",
           },
