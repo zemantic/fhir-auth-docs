@@ -5,20 +5,94 @@
  */
 
 /* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+.hero__title {
+  font-family: "PT Serif", serif;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+.hero {
+  background-color: var(--hero-primary);
+}
+
+.button-flat {
+  border-radius: 0;
+  background-color: var(--ifm-color-primary);
+}
+.button-flat:hover {
+  background-color: var(--ifm-color-primary-darker);
+}
+
+:root {
+  --hero-primary: #f4ede5;
+  --docusaurus-progress-bar-color: var(--ifm-color-primary);
+  --ifm-color-primary: #5563c6;
+  --ifm-color-primary-dark: #4051c7;
+  --ifm-color-primary-darker: #3849c1;
+  --ifm-color-primary-darkest: #2e3c9f;
+  --ifm-color-primary-light: #6e7bd5;
+  --ifm-color-primary-lighter: #7985d8;
+  --ifm-color-primary-lightest: #9ba4e2;
+  --ifm-background-color: #fff;
+  --ifm-code-font-size: 95%;
+  --ifm-navbar-background-color: #ffffff00;
+  --ifm-heading-color: #282828;
+  --ifm-navbar-shadow: none;
+  --ifm-footer-link-color: var(--ifm-heading-color);
+  --ifm-footer-background-color: transparent;
+  --doc-sidebar-width: calc(12vw + 100px) !important;
+  --sidebar-background: #faf7f5;
+  --sidebar-background-opacity: #faf7f500;
+  --ifm-button-padding-vertical: 0.8rem;
+  --ifm-hr-border-width: 0.5px;
+  --ifm-hr-background-color: #85858520;
+  --ifm-color-emphasis-300: #85858520;
+  --ifm-alert-shadow: unset;
+  --ifm-alert-border-left-width: 1px;
+  --ifm-global-radius: 0;
+  --title-margin: clamp(32px, 3vw, 58px);
+  --docusaurus-announcement-bar-height: auto;
+  --docusaurus-collapse-button-bg: transparent;
+  --docusaurus-collapse-button-bg-hover: rgba(0, 0, 0, 0.1);
+  --doc-sidebar-width: 300px;
+  --doc-sidebar-hidden-width: 30px;
+  --docsearch-primary-color: #5468ff;
+  --docsearch-text-color: #1c1e21;
+  --docsearch-spacing: 12px;
+  --docsearch-icon-stroke-width: 1.4;
+  --docsearch-highlight-color: var(--docsearch-primary-color);
+  --docsearch-muted-color: #969faf;
+  --docsearch-container-background: rgba(101, 108, 133, 0.8);
+  --docsearch-logo-color: #5468ff;
+  --docsearch-modal-width: 560px;
+  --docsearch-modal-height: 600px;
+  --docsearch-modal-background: #f5f6f7;
+  --docsearch-modal-shadow: inset 1px 1px 0 0 hsla(0, 0%, 100%, 0.5),
+    0 3px 8px 0 #555a64;
+  --docsearch-searchbox-height: 56px;
+  --docsearch-searchbox-background: #ebedf0;
+  --docsearch-searchbox-focus-background: #fff;
+  --docsearch-searchbox-shadow: inset 0 0 0 2px var(--docsearch-primary-color);
+  --docsearch-hit-height: 56px;
+  --docsearch-hit-color: #444950;
+  --docsearch-hit-active-color: #fff;
+  --docsearch-hit-background: #fff;
+  --docsearch-hit-shadow: 0 1px 3px 0 #d4d9e1;
+  --docsearch-key-gradient: linear-gradient(-225deg, #d5dbe4, #f8f8f8);
+  --docsearch-key-shadow: inset 0 -2px 0 0 #cdcde6, inset 0 0 1px 1px #fff,
+    0 1px 2px 1px rgba(30, 35, 90, 0.4);
+  --docsearch-footer-height: 44px;
+  --docsearch-footer-background: #fff;
+  --docsearch-footer-shadow: 0 -1px 0 0 #e0e3e8,
+    0 -3px 6px 0 rgba(69, 98, 155, 0.12);
+  --docsearch-primary-color: var(--ifm-color-primary);
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docusaurus-tag-list-border: var(--ifm-color-emphasis-300);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode.  */
+[data-theme="dark"] {
+  --hero-primary: #292d3e;
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
