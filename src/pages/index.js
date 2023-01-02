@@ -16,16 +16,19 @@ function HomepageHeader() {
           <div className="col col--8">
             <h1 className="hero__title">Documentation</h1>
             <p className="hero__subtitle">
-              Learn how to setup FHIR Auth and more technical details
+              Learn how to setup and use FHIR Auth
             </p>
             <div>
-              <button className="button button--primary button-flat button--lg">
+              <a
+                href="/docs/introduction"
+                className="button button--primary button-flat button--lg"
+              >
                 Get Started
-              </button>
+              </a>
             </div>
           </div>
           <div className="col col--4">
-            <img src="/img/book.png" />
+            <img src="./img/book.png" />
           </div>
         </div>
       </div>
