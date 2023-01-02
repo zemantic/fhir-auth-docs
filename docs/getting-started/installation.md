@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Install FHIR Auth Server
+# 🌱 Install FHIR Auth Server
 
 ### Clone the repository
 
