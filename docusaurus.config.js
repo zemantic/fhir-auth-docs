@@ -9,7 +9,7 @@ const config = {
   title: "FHIR Auth Documentation",
   tagline: "A Roubust Authentication Server For FHIR",
   url: "https://zemantic.co",
-  baseUrl: "/",
+  baseUrl: "/docs",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
